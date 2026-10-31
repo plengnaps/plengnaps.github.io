@@ -1,0 +1,47 @@
+/* Plain academic homepage — shared by home, random, and posts. */
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #222;
+  background: #fff;
+  max-width: 760px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+h1 { font-size: 26px; margin: 0; font-weight: 600; line-height: 1.35; }
+h2 { font-size: 18px; margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 1px solid #ddd; }
+p { margin: 12px 0; }
+blockquote {
+  margin: 20px 0;
+  padding-left: 16px;
+  border-left: 3px solid #ccc;
+}
+a { color: #0645ad; text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+ul { padding-left: 22px; }
+li { margin-bottom: 10px; }
+.subtitle { color: #666; margin-top: 2px; }
+.links { margin-top: 14px; }
+.year, .date { color: #666; }
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.hero-text { flex: 1; min-width: 0; }
+.hero-photo {
+  display: block;
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+footer { margin-top: 48px; padding-top: 12px; border-top: 1px solid #ddd; color: #666; font-size: 13px; }
+@media (max-width: 600px) {
+  body { margin: 32px auto; }
+  .hero { flex-direction: column-reverse; align-items: flex-start; gap: 18px; }
+  .hero-photo { width: 175px; height: 175px; }
+}
